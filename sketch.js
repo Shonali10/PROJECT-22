@@ -67,8 +67,9 @@ star.y = starBody.position.y
   ellipseMode(RADIUS);
  ellipse(starBody.position.x, starBody.position.y, 5, 5);
 
- if(starBody.position.y > 470 ){
-	starBody.setStatic(starBody, false);
+ if(star.y>470 &&
+	 starBody.position.y > 470 ){
+	Matter.Body.setStatic(starBody, true);
 }
 
  drawSprites();
