@@ -24,7 +24,7 @@ function setup() {
 	world = engine.world;
 
 
-	fairy = createSprite(130, 520);
+	fairy = createSprite(130, 350);
 	fairy.addAnimation("fairyflying",fairyImg);  
 	fairy.scale =0.25;
 
@@ -67,8 +67,8 @@ star.y = starBody.position.y
   ellipseMode(RADIUS);
  ellipse(starBody.position.x, starBody.position.y, 5, 5);
 
- if(star.y>470 &&
-	 starBody.position.y > 470 ){
+ if(star.y>300 &&
+	 starBody.position.y > 300 ){
 	Matter.Body.setStatic(starBody, true);
 }
 
